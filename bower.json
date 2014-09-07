@@ -1,0 +1,31 @@
+{
+  "name": "KSStrap",
+  "version": "0.1.0",
+  "authors": [
+    "Rich Oren <@richoren>"
+  ],
+  "description": "A Bootstrap driven KSS Style Guide",
+  "keywords": [
+    "css",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "KSS",
+    "living styleguide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "fontawesome":"~4.2.0"
+  }
+}

@@ -1,0 +1,252 @@
+// Tiles
+//
+// Tiles are used to give the user simple actions. Tiles should be limited to 2 or less actions on the tile.
+//
+// Styleguide 2
+
+
+// Domain Tiles
+//
+// Tiles can be specified by domain and be colored accordingly.
+// By adding .tile-action as a wrapper div the entire tile becomes clickable.
+//
+// Markup:
+// <div class="row">
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-sales">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-usd"></i> SALES</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">$123,456</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-sales">
+// 						<div class="row">
+// 							<div class="col-xs-6 tile-caption-pipe">
+// 								<p class="text-center">Sold</p>
+// 								<h3 class="text-center">2</h3>
+// 							</div>
+// 							<div class="col-xs-6">
+// 								<p class="text-center">Last</p>
+// 								<h3 class="text-center">10/25/14</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-qa">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-star"></i> QA</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">1 Open</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-qa">
+// 						<div class="row">
+// 							<div class="col-xs-6 tile-caption-pipe">
+// 								<p class="text-center">Resolved</p>
+// 								<h3 class="text-center">2</h3>
+// 							</div>
+// 							<div class="col-xs-6">
+// 								<p class="text-center">Last</p>
+// 								<h3 class="text-center">10/25/14</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-marketing">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-bullseye"></i> MARKETING</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">1 Active</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-marketing">
+// 						<div class="row">
+// 							<div class="col-xs-12">
+// 								<p class="text-center">Total Campaigns</p>
+// 								<h3 class="text-center">7</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-service">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-wrench"></i> SERVICE</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">$123,456</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-service">
+// 						<div class="row">
+// 							<div class="col-xs-6 tile-caption-pipe">
+// 								<p class="text-center">ROs</p>
+// 								<h3 class="text-center">100</h3>
+// 							</div>
+// 							<div class="col-xs-6">
+// 								<p class="text-center">Average</p>
+// 								<h3 class="text-center">$331</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-vehicle">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-car"></i> VEHICLES</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">2 Owned</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-vehicle">
+// 						<div class="row">
+// 							<div class="col-xs-12">
+// 								<p class="text-center">Last Service</p>
+// 								<h3 class="text-center">10/25/14</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-survey">
+// 				<div class="tile-action">
+// 					<div class="tile-heading">
+// 						<i class="fa fa-check-square-o"></i> SURVEYS</i>
+// 					</div>
+// 					<div class="tile-body">
+// 						<div class="row">
+// 							<div class="col-sm-12">
+// 								<div class="h1 text-center">5 Received</div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div class="tile-caption tile-caption-survey">
+// 						<div class="row">
+// 							<div class="col-xs-6 tile-caption-pipe">
+// 								<p class="text-center">Last Score</p>
+// 								<h3 class="text-center">75%</h3>
+// 							</div>
+// 							<div class="col-xs-6">
+// 								<p class="text-center">Last</p>
+// 								<h3 class="text-center">10/25/14</h3>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// </div>
+//
+// Styleguide 2.1
+
+// Action Tiles
+//
+// Action Tiles perform simple actions.
+// 
+//
+// Markup:
+// <div class="row">
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-default">
+// 				<div class="tile-heading">
+// 					I am an action tile
+// 				</div>
+// 				<div class="tile-body">
+// 					<div class="row">
+// 						<div class="col-sm-12">
+// 							<div class="h4 text-left">This tile provides some basic actions for the user</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 				<div class="tile-caption tile-caption-default">
+// 					<div class="row">
+// 						<div class="col-xs-12">
+// 							<div class="btn-toolbar">
+// 								<a class="btn btn-success pull-right" href="#">Go</a>
+// 								<a class="btn btn-danger pull-right" href="#">Stop</a>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// </div>
+//
+// Styleguide 2.2
+
+// Information Tile
+//
+// Information tiles are read only information
+//
+// Markup:
+// <div class="row">
+// 	<div class="col-sm-6">
+// 		<div class="tile-wrapper">
+// 			<div class="tile tile-default">
+// 				<div class="tile-heading">
+// 					I am read only
+// 				</div>
+// 				<div class="tile-body">
+// 					<div class="row">
+// 						<div class="col-sm-12">
+// 							<div class="h4 text-left">This tile provides read only info.</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// </div>
+//
+// Styleguide 2.3

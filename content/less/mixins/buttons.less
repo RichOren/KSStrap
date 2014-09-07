@@ -1,0 +1,66 @@
+// Paper Button Variant
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+
+.paper-button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: @color;
+    background-color: @background - #111;
+    border-color: @border - #111;
+  }
+  &.disabled,
+    &[disabled] {
+      &,
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active {
+        background-color: @background;
+        border-color: @border;
+      }
+    }
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+// Pseudo Button Variants - These are used for the DealerSocket styleguide
+// to visually show various button states.
+
+.button-pseudo-active(@color; @background; @border) {
+  color: @color;
+  background-color: darken(@background, 10%);
+      border-color: darken(@border, 12%);
+
+  .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+}
+
+.button-pseudo-hover(@color; @background; @border) {
+  color: @color;
+  background-color: darken(@background, 10%);
+      border-color: darken(@border, 12%);
+}
+
+.button-pseudo-disabled(@color; @background; @border) {
+
+  cursor: not-allowed;
+  pointer-events: none; // Future-proof disabling of clicks
+
+  color: @color;
+  background-color: @background;
+          border-color: @border;
+
+  .opacity(.65);
+  .box-shadow(none);
+
+}

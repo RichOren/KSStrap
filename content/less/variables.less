@@ -1,0 +1,1232 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across DealerSocket.
+@white: #fff;
+@black: #000;
+
+// hyphenated - Bootstraps notice the different spelling "Gray" 
+@gray-darker:            lighten(@black, 13.5%); // #222
+@gray-dark:              lighten(@black, 20%);   // #333
+@gray:                   lighten(@black, 33.5%); // #555
+@gray-light:             lighten(@black, 46.7%); // #777
+@gray-lighter:           lighten(@black, 93.5%); // #eee
+
+
+// hyphenated - plus alts - Dealersockets notice the different spelling "Grey"
+@grey-darkest            :  lighten(@black, 6.5) ; // #111
+@grey-darker             :  lighten(@black, 13.5); // #222
+@grey-dark               :  lighten(@black, 20)  ; // #333
+@grey-dark-alt           :  lighten(@black, 26.5); // #444
+@grey                    :  lighten(@black, 33.3); // #555
+@grey-alt                :  lighten(@black, 40)  ; // #666
+@grey-alt2               :  lighten(@black, 46.5); // #777
+@grey-default            :  lighten(@black, 50)  ; // #808080
+@grey-default-alt        :  lighten(@black, 53.3); // #888
+@grey-light              :  lighten(@black, 60)  ; // #999
+@grey-light-alt          :  lighten(@black, 66.7); // #aaa
+@grey-light-alt2         :  lighten(@black, 73.5); // #bbb
+@grey-lighter            :  lighten(@black, 80)  ; // #ccc
+@grey-lighter-alt        :  lighten(@black, 86.5); // #ddd
+@grey-lightest           :  lighten(@black, 91.7); // #eaeaea
+@grey-lightest-alt       :  lighten(@black, 93.5); // #eee
+@grey-lightest-alt2      :  lighten(@black, 92.7); // #f1f1f1
+
+@black-10: fadeout(@black, 10%);
+@black-20: fadeout(@black, 20%);
+@black-40: fadeout(@black, 40%);
+@black-60: fadeout(@black, 60%);
+@black-80: fadeout(@black, 80%);
+@black-90: fadeout(@black, 90%);
+@black-95: fadeout(@black, 95%);
+
+@white-10: fadeout(@white, 10%);
+@white-20: fadeout(@white, 20%);
+@white-40: fadeout(@white, 40%);
+@white-60: fadeout(@white, 60%);
+@white-80: fadeout(@white, 80%);
+@white-90: fadeout(@white, 90%);
+
+
+//Bootstrap Main Colors Vars
+@brand-primary:         #002c73;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+
+//DealerSocket Main Colors Vars
+@primary:  #0288d1;
+@primary-dark: darken(@primary, 10%);
+@primary-darker: darken(@primary, 20%);
+@primaryInverse: lighten(@primary, 50%);
+
+@blue-grey: #455a64;
+@blue-grey-light: lighten(@blue-grey, 22%);
+@blue-grey-lighter: lighten(@blue-grey, 51%);
+@blue-grey-inverse: lighten(@blue-grey, 61%);
+@blue-grey-darker: darken(@blue-grey, 15%);
+
+@paper-tint:#eaedf1;
+@teal: #009688;
+@cyan: #00bcd4;
+@blue: #0288d1;
+@blue-light: lighten(@blue,15%);
+@red: #ff5b57;
+@purple: #ba68c8;
+@orange: #ffa726;
+@hoverDarker: fadeout(@black, 92%);
+
+@paper-nav-height: 40px;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@letter-spacing-base:	  1.618px;
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
+//== DealerSocket Components
+//==========================
+//
+//Paper
+@paper-content-bg:					@paper-tint;
+@paper-content-padding:				@padding-large-vertical;
+
+@paper-editable-border:				@blue-grey-lighter;
+
+@paper-select-color:				@blue-grey;
+@paper-select-hover:				@blue-grey;
+
+@paper-section-divider:				@blue-grey-lighter;
+
+
+// Paper Titlebar
+@paper-font-size:					28px;
+@paper-titlebar-bg:					@primary - @grey-darkest;
+@paper-titlebar-color:				@blue-grey-inverse;
+@paper-titlebar-height:				@paper-nav-height;
+@paper-titlebar-padding-left:		@padding-large-vertical;
+@paper-titlebar-li-height:			@paper-nav-height;
+@paper-back-arrow-height:			@paper-nav-height;		
+@paper-back-a-color:				@blue-grey-inverse;
+@paper-back-a-hover-color:			@blue-grey-inverse + @grey-darker;
+@paper-title-height: 				@paper-nav-height;
+@paper-actions-height:				@paper-nav-height;	
+
+//Paper Toolbar
+//=============
+//Paper Toolbar	Nav		
+@paper-toolbar-nav-bg:							@primary;			
+@paper-toolbar-nav-min-height:					@paper-nav-height;
+@paper-toolbar-nav-height:						@paper-nav-height;
+
+@paper-toolbar-nav-li-a-color:					@blue-grey-inverse;
+@paper-toolbar-nav-li-a-height:					@paper-nav-height;
+
+@paper-toolbar-nav-active-color:				@primary + @grey-darkest;
+
+@paper-toolbar-navbar-nav-bg:					@primary + @grey-darkest;
+@paper-toolbar-navbar-nav-disabled-color:		@primary + @grey-darker;
+@paper-toolbar-navbar-nav-disabled-bg:			@primary;
+
+@paper-toolbar-dd-menu-bg:						@white;
+@paper-toolbar-dd-menu-color:					@blue-grey;
+
+@paper-toolbar-dd-active-focus-bg:				@blue-grey-inverse;
+@paper-toolbar-dd-active-focus-color:			@blue-grey;
+@paper-toolbar-dd-li-a-color:					@blue-grey;
+@paper-toolbar-dd-li-a-bg:						@blue-grey-inverse;
+@paper-toolbar-dd-li-a-hover-raduis:			@border-radius-base;
+
+@paper-toolbar-navbar-toggle-color:				@blue-grey-inverse;
+
+@paper-toolbar-collapse-bg:						@white;
+@paper-toolbar-collapse-border:					@blue-grey;
+@paper-toolbar-collapse-shadow-color:			@grey-alt2;
+@paper-toolbar-collapse-li-a-bg:				@white;
+@paper-toolbar-collapse-li-a-color:				@blue-grey;
+@paper-toolbar-collapse-ul-dd-menu-bg:			@blue-grey-inverse;
+@paper-toolbar-collapse-ul-devider-bg:			@blue-grey-inverse - @grey-darkest;
+@paper-toolbar-collapse-ul-devider-bg:			@blue-grey-inverse - @grey-darkest;
+
+@paper-toolbar-btn-right-height:				@paper-nav-height;
+
+@paper-toolbar-btn-default-bg:					lighten(@primary,5%);
+@paper-toolbar-btn-default-color:				@blue-grey-inverse;
+
+@paper-toolbar-btn-default-hover-bg:			lighten(@primary,3%);
+@paper-toolbar-btn-default-hover-color:			@blue-grey-inverse;
+@paper-toolbar-btn-default-hover-border:		@primary;
+
+@paper-toolbar-btn-primary-bg:					@primary;
+@paper-toolbar-btn-primary-color:				@blue-grey-inverse;
+
+@paper-toolbar-btn-primary-hover-color:			@blue-grey-inverse;
+@paper-toolbar-btn-primary-hover-border:		@primary;
+
+@paper-toolbar-btn-primary-disabled-bg:			@primary + @grey-darker;
+@paper-toolbar-btn-primary-disabled-color:		@primary;
+
+
+//buttons
+
+@paper-btn-pulldown-bg:						@white;
+
+@paper-btn-primary-bg:						@primary;	
+@paper-btn-primary-color:					@blue-grey-inverse;
+@paper-btn-primary-border:					@primary;
+
+
+@paper-btn-default-bg:						@blue-grey-inverse;	
+@paper-btn-default-color:					@blue-grey;
+@paper-btn-default-border:					@blue-grey-inverse - @grey-darker;
+
+@paper-btn-sales-bg:						@teal;	
+@paper-btn-sales-color:						@blue-grey-inverse;
+@paper-btn-sales-border:					@teal;
+
+@paper-btn-marketing-bg:					@red;			
+@paper-btn-marketing-color:					@blue-grey-inverse;
+@paper-btn-marketing-border:				@red;
+
+@paper-btn-qa-bg:							@orange;			
+@paper-btn-qa-color:						@blue-grey-inverse;
+@paper-btn-qa-border:						@orange;
+
+@paper-btn-survey-bg:						@purple;			
+@paper-btn-survey-color:					@blue-grey-inverse;
+@paper-btn-survey-border:					@purple;
+
+@paper-btn-vehicle-bg:						@cyan;			
+@paper-btn-vehicle-color:					@blue-grey-inverse;
+@paper-btn-vehicle-border:					@cyan;
+
+@paper-btn-service-bg:						@blue;			
+@paper-btn-service-color:					@blue-grey-inverse;
+@paper-btn-service-border:					@blue;
+
+//Badges
+@badge-incomplete:							@red;
+@badge-complete:							@teal;
+@badge-dnc:									@red;
+@badge-sales:								@teal;
+@badge-service:								@blue;
+@badge-qa:									@orange;
+@badge-marketing:							@red;
+@badge-vehicle:								@cyan;
+@badge-survey:								@purple;
+
+//Tabs
+@paper-tabs-nav-tabs-bg:						@white;
+@paper-tabs-nav-tabs-border:					@blue-grey-lighter;
+
+@paper-tabs-nav-tabs-li-a-color:				@blue-grey;
+@paper-tabs-nav-tabs-li-a-hover-bg:				darken(@white, 3%);
+@paper-tabs-nav-tabs-li-a-hover:				@blue-grey;
+
+@paper-tabs-nav-tabs-li-a-tab-btn-bg:			lighten(@primary,5%);
+@paper-tabs-nav-tabs-li-a-tab-btn-color:		@blue-grey;
+@paper-tabs-nav-tabs-li-a-tab-btn-hover-bg:		lighten(@primary, 3%);
+@paper-tabs-nav-tabs-li-a-tab-btn-hover:		@blue-grey;
+
+@paper-tabs-nav-tabs-dd-li-a-color:				@blue-grey;	
+
+@paper-tabs-nav-tabs-nav-li-a-bg:				@white;
+@paper-tabs-nav-tabs-nav-li-a-color:			@blue-grey;
+@paper-tabs-nav-tabs-nav-li-a-border:			@primary;
+
+@paper-tabs-nav-tabs-li-active-bg:				@white;
+@paper-tabs-nav-tabs-li-active-color:			@blue-grey;	
+@paper-tabs-nav-tabs-li-active-hover:			@white;	
+
+@paper-tab-content-tab-pane-bg:					@white;
+
+@paper-tab-content-tab-btn-bg:					@paper-tabs-nav-tabs-li-a-tab-btn-bg;
+@paper-tab-content-tab-btn-color:				@blue-grey-inverse;
+@paper-tab-content-tab-btn-hover-bg:			@paper-tabs-nav-tabs-li-a-tab-btn-hover-bg;
+@paper-tab-content-tab-btn-hover:				@blue-grey-inverse;
+
+
+//Paper Pagination
+@paper-pagination-color:						@primary;
+@paper-pagination-hover:						lighten(@blue-grey-lighter, 10%);
+
+@paper-label-value-lbl-color:					@blue-grey-light;
+@paper-label-value-lbl-hover:					@blue-grey + @grey-darkest;
+@paper-label-value-lbl-span-color:				@blue-grey-light;
+
+//Feeds
+@feed-item-note-color:							@primary;
+@feed-item-todo-complete-color:					@teal;
+@feed-item-todo-due-color:						@red;
+
+@paper-action-feed-item-hover-bg:				@blue-grey-inverse;
+@paper-action-feed-item-hover-radius:			0px;
+@paper-action-feed-item-a-color:				@blue;
+@paper-action-feed-timestamp-color:				@blue-grey-light;
+
+@paper-action-feed-divider-border:				@blue-grey-lighter;
+@paper-action-feed-divider-interval-border:		@blue-grey-lighter;
+@paper-action-paper-interval-badge-bg:			@blue-grey + @grey-alt;	
+
+
+@jPanelMenu-menu-bg:							@blue-grey;
+@jPanelMenu-menu-shadow:						@grey-alt;
+
+@jPanelMenu-menu-list-group-item-bg:			@blue-grey;
+@jPanelMenu-menu-list-group-item-color:			@blue-grey-inverse;
+@jPanelMenu-menu-list-group-item-hover:			@blue-grey + @grey-darkest;
+
+@jPanelMenu-menu-list-group-item-border:		#37474f;
+
+
+//Paper-Events
+
+@paper-section-status-color:					@blue-grey-light;
+
+@paper-progress-steps-labels-color:				@blue-light;
+
+@paper-progress-steps-complete-bg:				@primary;
+@paper-progress-steps-complete-hover-bg:		@primary - @grey-darkest;
+@paper-progress-steps-complete-today-color:		@white;
+
+@paper-progress-steps-active-bg:				@primary;
+@paper-progress-steps-active-hover-bg:			@paper-progress-steps-complete-hover-bg;
+
+@paper-progress-steps-sold-bg:					@teal;
+@paper-progress-steps-sold-hover:				@teal - @grey-darkest;
+
+@paper-progress-steps-next-color:				@blue-grey-lighter;
+
+
+//header
+@header-logo-color:							@blue-grey;
+
+
+@header-primary-bg:							@blue-grey-inverse;
+@header-primary-color:						@blue-grey;
+@header-primary-border:						@blue-grey-lighter;
+
+@btn-header-primary-color:					@blue-grey;
+@btn-header-primary-hover-bg:				@blue-grey-inverse;
+@btn-header-primary-hover:					@blue-grey;
+
+@header-label-alert-bg:						@red;
+@header-label-alert-color:					@white;
+
+@header-label-nonew-bg:						@blue-grey;
+@header-label-nonew-color:					@white;
+
+@header-advanced-bg:						@blue-grey-inverse + #0F0F0F;
+@header-advanced-border:					@blue-grey-lighter;
+@header-advanced-shadow-color:				@grey-alt2;
+
+@btn-header-nav-search-bg:					@header-advanced-bg;
+@btn-header-nav-search-color:				@blue-grey-light;
+
+@btn-header-search-bg:						@header-advanced-bg;
+@btn-header-search-color:					@blue-grey-light;
+
+@btn-header-advanced-bg:					@header-advanced-bg;
+@btn-header-advanced-color:					@blue-grey-light;
+
+@btn-header-logo-color:						@btn-header-advanced-color;
+
+@btn-header-advanced-divider:				@blue-grey-lighter;
+
+@btn-header-breadcrumb-bg:					@header-advanced-bg;
+
+@btn-header-breadcrumb-a-color:				@blue-grey;
+@btn-header-breadcrumb-a-hover:				@blue-grey + @grey-darker;
+
+@header-dropdown-li-a-color:				@blue-grey;	
+
+@header-mobile-bg:							@blue-grey-inverse;
+
+@nav-collapse-mobile-bg:					@header-advanced-bg;
+
+@nav-collapse-mobile-shadow:				@grey-alt2;
+
+@nav-collapse-mobile-li-border:				@blue-grey-inverse;
+
+@action-well-color:							@blue-grey;
+
+@well-action-hover-fallback-bg:				#ccc;
+@well-action-hover-bg:						@black-90;
+
+@well-dismiss-bg:							#f5f5f5;
+
+@well-dismiss-border:						#e3e3e3;
+
+@action-alert-warning-bg:					darken(#faebcc, 1%);
+
+
+// Tile
+@tile-color: 						@blue-grey-inverse;
+@tile-action-hover-bg: 				@black-90;
+@tile-footer-bg: 					@black-80; 
+@tile-heading-badge-bg:				@white;
+@tile-caption-bg:					@white;
+@tile-caption-color:				@blue-grey;
+@tile-caption-pipe-border:			@blue-grey-lighter;
+@tile-default:						@primary;
+@tile-sales:						@teal;
+@tile-service:						@blue;
+@tile-qa:							@orange;
+@tile-vehicle:						@cyan;
+@tile-marketing:					@red;
+@tile-survey:						@purple;
+
+// Card Panel
+
+@card-panel-radius:					0px;
+@card-panel-shadow-color:			@grey-lighter;
+
+@card-panel-heading-color:			@blue-grey;
+@card-panel-heading-border:			@blue-grey-lighter;
+
+@card-panel-body-bg:				@white-90;
+@card-panel-body-color:				@blue-grey;
+
+@card-panel-footer-bg:				@white;
+@card-panel-footer-color:			@blue-grey;
+@card-panel-footer-border:			@blue-grey-lighter;
+
+@card-panel-pulldown-icon-color:	@blue-grey-light;
+
+//Icons
+@action-icons-unable-color:			@blue-grey-lighter;
+@action-icons-able-color:			@primary-dark;
+@action-icons-able-hover:			@primary;	
+
+
+//Nano-Scroll
+//-----------------------------------
+@nano-pane-background:					rgba(0,0,0,.10);	
+@nano-slider-background:				rgba(0,0,0,.5);
+@nano-slider-background-fallback:		#444;
+
+
+//== Bootstrap Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.33;
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @brand-primary;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                #f5f5f5;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #ddd;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray;
+//** `<input>` border color
+@input-border:                   #ccc;
+//** `<input>` border radius
+@input-border-radius:            @border-radius-base;
+//** Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder:        @gray-light;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border:                rgba(0,0,0,.15);
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            @gray-dark;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         #f5f5f5;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray-light;
+
+//** Deprecated `@dropdown-caret-color` as of v3.1.0
+@dropdown-caret-color:           #000;
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+@navbar-height:                    50px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-border-color:       #ddd;
+
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-bg:                         #222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         @gray-lighter;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-open-link-hover-color:                 #fff;
+
+//== Tabs
+@nav-tabs-border-color:                     #ddd;
+
+@nav-tabs-link-hover-border-color:          @gray-lighter;
+
+@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-color:          @gray;
+@nav-tabs-active-link-hover-border-color:   #ddd;
+
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+//== Pills
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+
+//== Pagination
+//
+//##
+
+@pagination-color:                     @link-color;
+@pagination-bg:                        #fff;
+@pagination-border:                    #ddd;
+
+@pagination-hover-color:               @link-hover-color;
+@pagination-hover-bg:                  @gray-lighter;
+@pagination-hover-border:              #ddd;
+
+@pagination-active-color:              #fff;
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-border:             @brand-primary;
+
+@pagination-disabled-color:            @gray-light;
+@pagination-disabled-bg:               #fff;
+@pagination-disabled-border:           #ddd;
+
+
+//== Pager
+//
+//##
+
+@pager-bg:                             @pagination-bg;
+@pager-border:                         @pagination-border;
+@pager-border-radius:                  15px;
+
+@pager-hover-bg:                       @pagination-hover-bg;
+
+@pager-active-bg:                      @pagination-active-bg;
+@pager-active-color:                   @pagination-active-color;
+
+@pager-disabled-color:                 @pagination-disabled-color;
+
+
+//== Jumbotron
+//
+//##
+
+@jumbotron-padding:              30px;
+@jumbotron-color:                inherit;
+@jumbotron-bg:                   @gray-lighter;
+@jumbotron-heading-color:        inherit;
+@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             #3c763d;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                #31708f;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             #8a6d3b;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              #a94442;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+@tooltip-max-width:           200px;
+//** Tooltip text color
+@tooltip-color:               #fff;
+//** Tooltip background color
+@tooltip-bg:                  #000;
+@tooltip-opacity:             .9;
+
+//** Tooltip arrow width
+@tooltip-arrow-width:         5px;
+//** Tooltip arrow color
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+//== Popovers
+//
+//##
+
+//** Popover body background color
+@popover-bg:                          #fff;
+//** Popover maximum width
+@popover-max-width:                   276px;
+//** Popover border color
+@popover-border-color:                rgba(0,0,0,.2);
+//** Popover fallback border color
+@popover-fallback-border-color:       #ccc;
+
+//** Popover title background color
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+//** Popover arrow width
+@popover-arrow-width:                 10px;
+//** Popover arrow color
+@popover-arrow-color:                 #fff;
+
+//** Popover outer arrow width
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+//** Popover outer arrow color
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+//** Popover outer arrow fallback color
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+
+//== Labels
+//
+//##
+
+//** Default label background color
+@label-default-bg:            @gray-light;
+//** Primary label background color
+@label-primary-bg:            @brand-primary;
+//** Success label background color
+@label-success-bg:            @brand-success;
+//** Info label background color
+@label-info-bg:               @brand-info;
+//** Warning label background color
+@label-warning-bg:            @brand-warning;
+//** Danger label background color
+@label-danger-bg:             @brand-danger;
+
+//** Default label text color
+@label-color:                 #fff;
+//** Default text color of a linked label
+@label-link-hover-color:      #fff;
+
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+@modal-inner-padding:         15px;
+
+//** Padding applied to the modal title
+@modal-title-padding:         15px;
+//** Modal title line-height
+@modal-title-line-height:     @line-height-base;
+
+//** Background color of modal content area
+@modal-content-bg:                             #fff;
+//** Modal content border color
+@modal-content-border-color:                   rgba(0,0,0,.2);
+//** Modal content border color **for IE8**
+@modal-content-fallback-border-color:          #999;
+
+//** Modal backdrop background color
+@modal-backdrop-bg:           #000;
+//** Modal backdrop opacity
+@modal-backdrop-opacity:      .5;
+//** Modal header border color
+@modal-header-border-color:   #e5e5e5;
+//** Modal footer border color
+@modal-footer-border-color:   @modal-header-border-color;
+
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-padding:               15px;
+@alert-border-radius:         @border-radius-base;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @state-success-bg;
+@alert-success-text:          @state-success-text;
+@alert-success-border:        @state-success-border;
+
+@alert-info-bg:               @state-info-bg;
+@alert-info-text:             @state-info-text;
+@alert-info-border:           @state-info-border;
+
+@alert-warning-bg:            @state-warning-bg;
+@alert-warning-text:          @state-warning-text;
+@alert-warning-border:        @state-warning-border;
+
+@alert-danger-bg:             @state-danger-bg;
+@alert-danger-text:           @state-danger-text;
+@alert-danger-border:         @state-danger-border;
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+@progress-bg:                 #f5f5f5;
+//** Progress bar text color
+@progress-bar-color:          #fff;
+
+//** Default progress bar color
+@progress-bar-bg:             @brand-primary;
+//** Success progress bar color
+@progress-bar-success-bg:     @brand-success;
+//** Warning progress bar color
+@progress-bar-warning-bg:     @brand-warning;
+//** Danger progress bar color
+@progress-bar-danger-bg:      @brand-danger;
+//** Info progress bar color
+@progress-bar-info-bg:        @brand-info;
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+@list-group-bg:                 #fff;
+//** `.list-group-item` border color
+@list-group-border:             #ddd;
+//** List group border radius
+@list-group-border-radius:      @border-radius-base;
+
+//** Background color of single list items on hover
+@list-group-hover-bg:           #f5f5f5;
+//** Text color of active list items
+@list-group-active-color:       @component-active-color;
+//** Background color of active list items
+@list-group-active-bg:          @component-active-bg;
+//** Border color of active list elements
+@list-group-active-border:      @list-group-active-bg;
+//** Text color for content within active list items
+@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+
+//** Text color of disabled list items
+@list-group-disabled-color:      @gray-light;
+//** Background color of disabled list items
+@list-group-disabled-bg:         @gray-lighter;
+//** Text color for content within disabled list items
+@list-group-disabled-text-color: @list-group-disabled-color;
+
+@list-group-link-color:         #555;
+@list-group-link-hover-color:   @list-group-link-color;
+@list-group-link-heading-color: #333;
+
+
+//== Panels
+//
+//##
+
+@panel-bg:                    #fff;
+@panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @gray-dark;
+@panel-default-border:        #ddd;
+@panel-default-heading-bg:    #f5f5f5;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          @state-success-text;
+@panel-success-border:        @state-success-border;
+@panel-success-heading-bg:    @state-success-bg;
+
+@panel-info-text:             @state-info-text;
+@panel-info-border:           @state-info-border;
+@panel-info-heading-bg:       @state-info-bg;
+
+@panel-warning-text:          @state-warning-text;
+@panel-warning-border:        @state-warning-border;
+@panel-warning-heading-bg:    @state-warning-bg;
+
+@panel-danger-text:           @state-danger-text;
+@panel-danger-border:         @state-danger-border;
+@panel-danger-heading-bg:     @state-danger-bg;
+
+
+//== Thumbnails
+//
+//##
+
+//** Padding around the thumbnail image
+@thumbnail-padding:           4px;
+//** Thumbnail background color
+@thumbnail-bg:                @body-bg;
+//** Thumbnail border color
+@thumbnail-border:            #ddd;
+//** Thumbnail border radius
+@thumbnail-border-radius:     @border-radius-base;
+
+//** Custom text color for thumbnail captions
+@thumbnail-caption-color:     @text-color;
+//** Padding around the thumbnail caption
+@thumbnail-caption-padding:   9px;
+
+
+//== Wells
+//
+//##
+
+@well-bg:                     #f5f5f5;
+@well-border:                 darken(@well-bg, 7%);
+
+
+//== Badges
+//
+//##
+
+@badge-color:                 #fff;
+//** Linked badge text color on hover
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+//** Badge text color in active nav link
+@badge-active-color:          @link-color;
+//** Badge background color in active nav link
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         10px;
+
+
+//== Breadcrumbs
+//
+//##
+
+@breadcrumb-padding-vertical:   8px;
+@breadcrumb-padding-horizontal: 15px;
+//** Breadcrumb background color
+@breadcrumb-bg:                 #f5f5f5;
+//** Breadcrumb text color
+@breadcrumb-color:              #ccc;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:       @gray-light;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:          "/";
+
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+
+@carousel-caption-color:                      #fff;
+
+
+//== Close
+//
+//##
+
+@close-font-weight:           bold;
+@close-color:                 #000;
+@close-text-shadow:           0 1px 0 #fff;
+
+
+//== Code
+//
+//##
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@kbd-color:                   #fff;
+@kbd-bg:                      #333;
+
+@pre-bg:                      #f5f5f5;
+@pre-color:                   @gray-dark;
+@pre-border-color:            #ccc;
+@pre-scrollable-max-height:   340px;
+
+
+//== Type
+//
+//##
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+//** Text muted color
+@text-muted:                  @gray-light;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-light;
+//** Headings small color
+@headings-small-color:        @gray-light;
+//** Blockquote small color
+@blockquote-small-color:      @gray-light;
+//** Blockquote font size
+@blockquote-font-size:        (@font-size-base * 1.25);
+//** Blockquote border color
+@blockquote-border-color:     @gray-lighter;
+//** Page header border color
+@page-header-border-color:    @gray-lighter;
+//** Width of horizontal description list titles
+@dl-horizontal-offset:        @component-offset-horizontal;
+//** Horizontal line color.
+@hr-border:                   @gray-lighter;
+

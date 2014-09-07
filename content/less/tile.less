@@ -1,0 +1,91 @@
+.tile-wrapper {-moz-box-shadow:0 0 2px 1px #ccc;-webkit-box-shadow:0 0 2px 1px #ccc;box-shadow:0 0 2px 1px #ccc;
+  //comment placeholder
+  .tile {
+    margin-bottom: 20px;
+    color: @tile-color;
+    &.tile-default{
+      background-color:@tile-default;
+      .tile-caption{
+        &.tile-caption-default{
+          color:@tile-default;
+        }
+      }
+    }
+    &.tile-sales{
+      background-color:@tile-sales;
+      .tile-caption{
+        &.tile-caption-sales{
+          color:@tile-sales;
+        }
+      }
+    }
+    &.tile-service{
+      background-color:@tile-service;
+      .tile-caption{
+        &.tile-caption-service{
+          color:@tile-service;
+        }
+      }
+    }
+    &.tile-qa{
+      background-color:@tile-qa;
+      .tile-caption{
+        &.tile-caption-qa{
+          color:@tile-qa;
+        }
+      }
+    }
+    &.tile-marketing{
+      background-color:@tile-marketing;
+      .tile-caption{
+        &.tile-caption-marketing{
+          color:@tile-marketing;
+        }
+      }
+    }
+    &.tile-vehicle{
+      background-color:@tile-vehicle;
+      .tile-caption{
+        &.tile-caption-vehicle{
+          color:@tile-vehicle;
+        }
+      }
+    }
+    &.tile-survey{
+      background-color:@tile-survey;
+      .tile-caption{
+        &.tile-caption-survey{
+          color:@tile-survey;
+        }
+      }
+    }
+  }
+  .tile-action {
+    &:hover {
+      background-color: @tile-action-hover-bg;
+      cursor: pointer;
+    }
+  }
+  .tile-body {
+    padding: @padding-large-vertical;
+    .h1{margin-top:10px;}
+  }
+  .tile-heading,
+  .tile-footer {
+    padding: @padding-small-vertical @padding-small-horizontal;
+    background-color: @tile-footer-bg;
+  }
+  .tile-heading .badge {
+    background-color: @tile-heading-badge-bg;
+  }
+
+  .tile-caption {
+    color: @blue-grey;
+    padding: @padding-small-horizontal;
+    background-color: @tile-caption-bg;
+  }
+  .tile-caption-pipe {
+    border-right: 1px solid @tile-caption-pipe-border;
+  }
+  
+}

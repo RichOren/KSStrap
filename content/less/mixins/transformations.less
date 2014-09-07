@@ -1,0 +1,41 @@
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}
+
+.transition-duration(@duration: 0.2s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.transform-style(...) {
+  -webkit-transform-stye: @arguments;
+  -moz-transform-stye: @arguments;
+  -o-transform-stye: @arguments;
+  -ms-transform-stye: @arguments;
+  transform-stye: @arguments;
+}
+
+
+.transition-custom(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+.transition-all(@duration:0.2s, @ease:ease-out, @ease-duration:0s) {
+  -webkit-transition: all @duration @ease @ease-duration;
+  -moz-transition: all @duration @ease @ease-duration;
+  -o-transition: all @duration @ease @ease-duration;
+  transition: all @duration @ease @ease-duration;
+}

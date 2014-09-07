@@ -1,0 +1,185 @@
+// Buttons
+//
+//<p>Buttons have a few required constraints for proper functionality, accessibility, and styling.</p>
+//<ul class="task-list">
+//<li>Whenever possible, use <code>&lt;button type="button"&gt;</code> over <code>&lt;a href="#"&gt;</code>.</li>
+//<li>Always declare a <code>type</code> on your <code>&lt;button&gt;</code> elements to ensure zero hiccups with nearby forms and property order.</li>
+//<li>Never set <code>tabindex</code> on buttons—let the browser automatically set that.</li>
+//<li>For <a href="#">tooltips</a>, always place the
+//<code>aria-label</code> and <code>.tooltipped</code> classes directly on the <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code>.</li>
+//<li>Icon and tooltips conflict, therefore Icons should always be children elements of <code>&lt;button&gt;</code>s or <code>&lt;a&gt;</code>s.</li>
+//</ul>
+//
+// Styleguide 1
+
+
+// Base styles & states
+//
+// These are the base styles and states.
+//
+// :hover       - Buttons will appear rolled over (with a darker background, darker border) when the pointer device enters this elements box model on 'non touch' devices. This pseudo property has no effect on touch devices.
+// :active      - Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For `<button>` elements, this is done via `:active`. For `<a>` elements, it's done with .active. However, you may use .active on `<button>`s should you need to replicate the active state programmatically.
+// .active - No need to add `:active` as it's a pseudo-class, but if you need to force the same appearance, go ahead and add .active. Add the `.active` class to `<a>` buttons.
+// .disabled    - Disabled State - Make buttons look unclickable by fading them back 50%. If you use `<button>` element, that is acceptable to add `disabled="disabled"` attribute instead. On Anchor element Add the .disabled class to `<a>` buttons.
+//
+//
+// Markup:
+// <button class="btn btn-default {$modifiers}">default</button>
+// <button class="btn btn-primary {$modifiers}">primary</button>
+// <button class="btn btn-success {$modifiers}">success</button>
+// <button class="btn btn-warning {$modifiers}">warning</button>
+// <button class="btn btn-danger {$modifiers}">danger</button>
+// <button class="btn btn-link {$modifiers}">link</button>
+//
+// Styleguide 1.1
+
+
+
+// Sizes
+//
+// Fancy larger or smaller buttons? Add `.btn-lg`, `.btn-sm`, or `.btn-xs` for additional sizes. Create block level buttons—those that span the full width of a parent— by adding .btn-block. The default button size is shown below.
+//
+// .btn-lg  - The large button size is good for very large screen sizes and TV's. They are also the preferred size to use on Touch devices where the user will need a larger hit area on the screen.
+// .btn-sm - Small button.
+// .btn-xs   - Mini button.
+// .btn-block  - Block level button.
+//
+// Markup:
+// <button class="btn btn-default {$modifiers}">default</button>
+// <button class="btn btn-primary {$modifiers}">primary</button>
+// <button class="btn btn-success {$modifiers}">success</button>
+// <button class="btn btn-warning {$modifiers}">warning</button>
+// <button class="btn btn-danger {$modifiers}">danger</button>
+// <button class="btn btn-link {$modifiers}">link</button>
+//
+// Styleguide 1.2
+
+
+// Button tags
+//
+// Use the `.btn` class on an `<a>`, `<button>`, or `<input>` element.
+//
+// Markup:
+// <a href="#" class="btn btn-default">Link</a>
+// <button type="submit" class="btn btn-default">Button</button>
+// <input type="submit" class="btn btn-default" value="Input:submit" />
+// <input type="button" class="btn btn-default" value="Input:button" />
+//
+// Styleguide 1.3
+
+
+// Options
+//
+//  Use any of the available button classes to quickly create a styled button.
+//
+// .btn-default   - The Default button style for this theme.
+// .btn-primary   - Provides extra visual weight and identifies the primary action in a set of buttons.
+// .btn-info      - Used as an alternative to the default styles.
+// .btn-success   - Indicates a successful or positive action.
+// .btn-warning   - Indicates caution should be taken with this action.
+// .btn-danger    - Indicates a dangerous or potentially negative action.
+// .btn-link      - Deemphasize a button by making it look like a link while maintaining button behavior.
+//
+// Markup:
+// <a href="#" class="btn btn-default {$modifiers}">Link</a>
+// <button type="submit" class="btn btn-default {$modifiers}">Button</button>
+// <input type="submit" class="btn btn-default {$modifiers}" value="Input:submit" />
+// <input type="button" class="btn btn-default {$modifiers}" value="Input:button" />
+//
+// Styleguide 1.4
+
+
+// Button groups
+//
+// Group a series of buttons together on a single line with the button group.
+//  <div class="bs-callout bs-callout-warning">
+//     <h4>Tooltips &amp; popovers in button groups require special setting</h4>
+//     <p>When using tooltips or popovers on elements within a <code>.btn-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
+//   </div>
+//
+// .btn-group             - Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.
+//
+// Markup:
+// <div class="btn-group">
+//   <button type="button" class="btn btn-default">Left</button>
+//   <button type="button" class="btn btn-default">Middle</button>
+//   <button type="button" class="btn btn-default">Right</button>
+// </div>
+//
+// Styleguide 1.5
+
+
+// Button Toolbar
+//
+// Optional: Group multiple button groups together for a toolbar
+//
+// .btn-toolbar             - Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code>for more complex components.
+//
+// Markup:
+// <div class="btn-toolbar" role="toolbar" style="margin: 0;">
+//    <div class="btn-group">
+//      <button type="button" class="btn btn-default">1</button>
+//      <button type="button" class="btn btn-default">2</button>
+//      <button type="button" class="btn btn-default">3</button>
+//      <button type="button" class="btn btn-default">4</button>
+//    </div>
+//    <div class="btn-group">
+//      <button type="button" class="btn btn-default">5</button>
+//      <button type="button" class="btn btn-default">6</button>
+//      <button type="button" class="btn btn-default">7</button>
+//    </div>
+//    <div class="btn-group">
+//      <button type="button" class="btn btn-default">8</button>
+//    </div>
+//</div>
+// 
+//
+// Styleguide 1.6
+
+
+// Button Group Sizing
+//
+// Remix the default button sizing classes into new ones for easier manipulation.
+//
+// .btn-group-lg             - Large
+// .btn-group-sm             - Small
+// .btn-group-xs             - Xtra Small
+//
+// Markup:
+// <div class="btn-toolbar" role="toolbar">
+//    <div class="btn-group {$modifiers}">
+//       <button type="button" class="btn btn-default">Left</button>
+//       <button type="button" class="btn btn-default">Middle</button>
+//       <button type="button" class="btn btn-default">Right</button>
+//    </div>
+// </div>
+// 
+//
+// Styleguide 1.7
+
+
+
+// Button Group Nesting
+//
+// Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.
+//
+// .dropdown-toggle          - Creates a dropdown toggle for a button in a button group.
+//
+// Markup:
+// <div class="btn-group">
+//   <button type="button" class="btn btn-default">1</button>
+//   <button type="button" class="btn btn-default">2</button>
+//   <div class="btn-group">
+//     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+//       Dropdown
+//       <span class="caret"></span>
+//     </button>
+//     <ul class="dropdown-menu" role="menu">
+//       <li><a href="#">Dropdown link</a></li>
+//       <li><a href="#">Dropdown link</a></li>
+//     </ul>
+//   </div>
+// </div>
+// 
+//
+// Styleguide 1.8
