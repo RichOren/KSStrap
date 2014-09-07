@@ -30,6 +30,18 @@ module.exports = function (grunt) {
                     'content/styles/<%= pkg.name %>.css': 'content/less/<%= pkg.name %>.less',
                 }
             },
+            style: {
+                options: {
+                  strictMath: false,
+                  sourceMap: true,
+                  outputSourceFiles: true,
+                  sourceMapURL: '<%= pkg.name %>.css.map',
+                  sourceMapFilename: 'content/kss/template/public/<%= pkg.name %>.css.map'
+                },
+                files: {
+                    'content/kss/template/public/<%= pkg.name %>.css': 'content/less/<%= pkg.name %>.less',
+                }
+            },
         },
        
         autoprefixer: {
@@ -50,7 +62,13 @@ module.exports = function (grunt) {
               map: true
             },
             src: 'content/styles/<%= pkg.name %>.css'
-          }
+          },
+          style: {
+            options: {
+              map: true
+            },
+            src: 'content/kss/template/public/<%= pkg.name %>.css'
+          },
         },
 
         cssmin: {
@@ -62,7 +80,11 @@ module.exports = function (grunt) {
           minifyCore: {
             src: 'content/styles/<%= pkg.name %>.css',
             dest: 'content/styles/<%= pkg.name %>.min.css'
-          }
+          },
+          minifyStyle: {
+            src: 'content/kss/template/public/<%= pkg.name %>.css',
+            dest: 'content/kss/template/public/<%= pkg.name %>.min.css'
+          },
         },
 
         usebanner: {
@@ -141,7 +163,7 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('lint-docs-css', ['csslint:core']);
-    grunt.registerTask('default', ['clean:styles', 'less', 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'clean:styleguide', 'kss']);
+    grunt.registerTask('default', ['clean:styles', 'less', 'autoprefixer', 'csscomb:core', 'usebanner', 'cssmin', 'clean:styleguide', 'kss']);
     // 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'lint-docs-css'
 
 };

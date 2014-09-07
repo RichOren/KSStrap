@@ -3,7 +3,13 @@ KSStrap
 
 This is a **living styleguide** made from [kss-node](https://github.com/hughsk/kss-node) styleguide.
 "kss-node" is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS).
-kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus. That is thanks to [Bootstrap](http://http://getbootstrap.com/).
+kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus. 
+
+This implementation uses LESS and you are able to Fully Theme the styleguide using the famous framework [Bootstrap](http://getbootstrap.com/). 
+
+It is poosible to add and build your own custom icon fonts using the [IcoMoon App](https://icomoon.io/app/). This example is using [FontAwesome 4.2.0](http://fortawesome.github.io/Font-Awesome/) with **IcoMoon's Happy Faces** added as an example of how to customize and mix fonts. You use the 
+
+
 
 
 Download
@@ -20,27 +26,13 @@ You have to install kss-node at first.
 
 How to apply this template
 --------------------------
-1. Install kss-node. Type `npm install kss` or `npm install -g kss` for global CLI.
-2. Download [kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip) and copy the "template" folder into your working directory.
-3. Run `kss-node` command with `--template` option, like below.
-
-```
-kss-node <sourcedir> --template path/to/template
-```
+Description
 
 
 License
 -------
 This template is under the [MIT License](https://github.com/htanjo/kss-node-template/blob/master/LICENSE).
 
-
-kss-node quickstart
-===================
-
-I introduce about kss-node briefly.
-
-If you want to learn kss-node, please refer [kss-node project page](https://github.com/hughsk/kss-node).
-And also the original [KSS specification](https://github.com/kneath/kss/blob/master/SPEC.md) may be helpful for writing your documentation.
 
 
 Installation
@@ -49,10 +41,15 @@ As kss-node is provided as a npm package, you can install by just typing `npm in
 If you want to use the command line interface, install it globally.
 
 ```
-npm install -g kss
+npm install
+```
+```
+bower install
 ```
 
-
+```
+grunt
+```
 Format
 ------
 kss-node is almost compatible with KSS documentation.
