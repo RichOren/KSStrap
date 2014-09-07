@@ -68,11 +68,28 @@ This will run the default Grunt task which will run through the KSStrap workflow
 * content/styles/KSStrap.css.map - [Map](https://developer.chrome.com/devtools/docs/css-preprocessors)
 * content/styles/KSStrap.min.css - Production
 
+```
+content/
+├── styles/
+│   ├── KSStrap.css
+│   ├── KSStrap.css.map
+│   ├── KSStrap.min.css
+```
+
 ######Styleguide Website for your website or web app.
 
 * styleguide/index.html - Home and overview of the style guide.
 * styleguide/section-xxx.html - Each section of the Styleguide.
 * styleguide/public/ - Assets for the Styleguide website. 
+
+```
+styleguide/
+│   ├── index.html
+│   ├── section-xxx.html
+│   ├── KSStrap.min.css
+├── public/
+│   ├── ...
+```
 
 Formating the TechDoc's
 ------
