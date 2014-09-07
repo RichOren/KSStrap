@@ -1,12 +1,9 @@
-kss-node-template
+KSStrap
 =================
 
-This is a **template** for [kss-node](https://github.com/hughsk/kss-node) styleguide.
+This is a **living styleguide** made from [kss-node](https://github.com/hughsk/kss-node) styleguide.
 "kss-node" is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS).
-kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus.
-
-You can see the example styleguide from the left navi.
-That is thanks to [Twitter Bootstrap](http://twitter.github.io/bootstrap/).
+kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus. That is thanks to [Bootstrap](http://http://getbootstrap.com/).
 
 
 Download
