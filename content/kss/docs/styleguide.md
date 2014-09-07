@@ -3,7 +3,7 @@ KSStrap
 
 This is a **living styleguide** made from [kss-node](https://github.com/hughsk/kss-node) styleguide.
 "kss-node" is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS).
-kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus. 
+kss-node enables us to generate a beatiful styleguide for CSS, it also suports LESS, SASS and Stylus. 
 
 This implementation uses LESS and you are able to Fully Theme the styleguide using the famous framework [Bootstrap](http://getbootstrap.com/). 
 
@@ -14,19 +14,11 @@ It is poosible to add and build your own custom icon fonts using the [IcoMoon Ap
 
 Download
 --------
-**[kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip)** [zip] or
+**[KSStrap](https://github.com/RichOren/KSStrap/zipball/master.zip)** [zip] or
 
 ```
-git clone git://github.com/htanjo/kss-node-template.git
+git clone git://github.com/RichOren/KSStrap.git
 ```
-
-**Note:** This package contains only template files.
-You have to install kss-node at first.
-
-
-How to apply this template
---------------------------
-Description
 
 
 License
@@ -37,8 +29,7 @@ This template is under the [MIT License](https://github.com/htanjo/kss-node-temp
 
 Installation
 ------------
-As kss-node is provided as a npm package, you can install by just typing `npm install kss`.
-If you want to use the command line interface, install it globally.
+All you have to do is make sure you have Node JS installed, Grunt CLI and Bower the run the command below:
 
 ```
 npm install
@@ -50,7 +41,7 @@ bower install
 ```
 grunt
 ```
-Format
+Formating the TechDoc's
 ------
 kss-node is almost compatible with KSS documentation.
 But kss-node can depend on only comment in source code because it has `Markup:` directive for showing the sample markup.
@@ -132,5 +123,4 @@ And each description supports the Markdown writing.
 
 More example code
 -----------------
-This document is also created by using kss-node.
-You can see the source code in the [demo directory](https://github.com/htanjo/kss-node-template/tree/master/demo/src).
+This document is also created by using KSStrap.
