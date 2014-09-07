@@ -86,7 +86,6 @@ content/
 styleguide/
 │   ├── index.html
 │   ├── section-xxx.html
-│   ├── KSStrap.min.css
 ├── public/
 │   ├── ...
 ```
