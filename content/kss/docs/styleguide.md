@@ -46,7 +46,7 @@ This template is under the [MIT License](https://github.com/htanjo/kss-node-temp
 
 Installation
 ------------
-All you have to do is make sure you have [Node JS](http://nodejs.org/) installed, [Grunt CLI](http://gruntjs.com/getting-started) and [Bower](http://bower.io/) then run the commands below:
+All you have to do is make sure you have [Node JS](http://nodejs.org/), [Grunt CLI](http://gruntjs.com/getting-started) and [Bower](http://bower.io/) installed then run the commands below:
 
 ```
 npm install
