@@ -25,7 +25,7 @@ It is poosible to add and build your own custom icon fonts using the [IcoMoon Ap
 
 You can import the [KSStrap.selection JSON file](https://github.com/RichOren/KSStrap/blob/master/content/kss/template/public/fonts/KSStrap.selection.json) into the [IcoMoon App](https://icomoon.io/app/), customize, add your own glyphs and then download your changes. 
 
-I will do a complete tutorial when I get the time on how this is done. It is super easy though to figure out this [TOTALLY AWESOME app](https://icomoon.io/app/). The people over at [IcoMoon](https://icomoon.io/) are super creative and very generous for creaating such an awesome tool.
+I will do a complete tutorial when I get the time on how this is done. It is super easy though to figure out this [TOTALLY AWESOME app](https://icomoon.io/app/). The people over at [IcoMoon](https://icomoon.io/) are super creative and very generous for creating such an awesome tool.
 
 
 
