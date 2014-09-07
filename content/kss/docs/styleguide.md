@@ -51,13 +51,29 @@ All you have to do is make sure you have [Node JS](http://nodejs.org/), [Grunt C
 ```
 npm install
 ```
+This will install the Grunt Dependencies needed to complete the KSStrap workflow tasks. 
+
 ```
 bower install
 ```
-
+This will install the Bower Dependencies (Bootstrap - FontAwesome) and source files needed for the KSStrap workflow tasks. 
 ```
 grunt
 ```
+This will run the default Grunt task which will run through the KSStrap workflow and create:
+
+######Style Sheets for your website or web app.
+
+* content/styles/KSStrap.css - Debug
+* content/styles/KSStrap.css.map - Map https://developer.chrome.com/devtools/docs/css-preprocessors
+* content/styles/KSStrap.min.css - Production
+
+######Styleguide Website for your website or web app.
+
+* styleguide/index.html - Home and overview of the style guide.
+* styleguide/section-xxx.html - Each section of the Styleguide.
+* styleguide/public/ - Assets for the Styleguide website. 
+
 Formating the TechDoc's
 ------
 kss-node is almost compatible with KSS documentation.
