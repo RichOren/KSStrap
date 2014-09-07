@@ -7,6 +7,8 @@ KSStrap utilizes a **living styleguide** made from [kss-node](https://github.com
 "kss-node" is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS).
 kss-node enables us to generate a beatiful styleguide for CSS, it also suports LESS, SASS and Stylus. 
 
+[Demo Styleguide](http://richoren.github.io/KSStrap/)
+
 This implementation uses LESS, it's a fully customizable styleguide using the world famous framework [Bootstrap](http://getbootstrap.com/). KSStrap was inspired by this project and I learned alot trying to figure out what these Super Talented people were doing. You guys rule!
 
 Create custom and/or multi-themed Websites & Web Apps.
