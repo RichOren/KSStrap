@@ -65,7 +65,7 @@ This will run the default Grunt task which will run through the KSStrap workflow
 ######Style Sheets for your website or web app.
 
 * content/styles/KSStrap.css - Debug
-* content/styles/KSStrap.css.map - Map https://developer.chrome.com/devtools/docs/css-preprocessors
+* content/styles/KSStrap.css.map - [Map](https://developer.chrome.com/devtools/docs/css-preprocessors)
 * content/styles/KSStrap.min.css - Production
 
 ######Styleguide Website for your website or web app.
