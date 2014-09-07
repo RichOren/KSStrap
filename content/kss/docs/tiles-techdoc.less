@@ -10,179 +10,46 @@
 // Tiles can be specified by domain and be colored accordingly.
 // By adding .tile-action as a wrapper div the entire tile becomes clickable.
 //
+// .default - Desc.
+// .sales - Desc.
+// .qa - Desc.
+// .marketing - Desc.
+// .service - Desc.
+// .vehicle - Desc.
+// .survey - Desc.
+//
+//
 // Markup:
 // <div class="row">
 // 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-sales">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-usd"></i> SALES</i>
-// 					</div>
-// 					<div class="tile-body">
+// 		<section class="tile-wrapper">
+// 			<div class="tile tile-{$modifiers}">
+// 				<article class="tile-action">
+// 					<header class="tile-heading">
+// 						<i class="fa fa-{$modifiers}"></i> {$modifiers}</i>
+// 					</header>
+// 					<article class="tile-body">
 // 						<div class="row">
 // 							<div class="col-sm-12">
-// 								<div class="h1 text-center">$123,456</div>
+// 								<div class="h1 text-center">Large Data</div>
 // 							</div>
 // 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-sales">
+// 					</article>
+// 					<div class="tile-caption tile-caption-{$modifiers}">
 // 						<div class="row">
-// 							<div class="col-xs-6 tile-caption-pipe">
-// 								<p class="text-center">Sold</p>
+// 							<aside class="col-xs-6 tile-caption-pipe">
+// 								<p class="text-center">small data</p>
 // 								<h3 class="text-center">2</h3>
-// 							</div>
-// 							<div class="col-xs-6">
-// 								<p class="text-center">Last</p>
+// 							</aside>
+// 							<aside class="col-xs-6">
+// 								<p class="text-center">small data</p>
 // 								<h3 class="text-center">10/25/14</h3>
-// 							</div>
+// 							</aside>
 // 						</div>
 // 					</div>
-// 				</div>
+// 				</article>
 // 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-qa">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-star"></i> QA</i>
-// 					</div>
-// 					<div class="tile-body">
-// 						<div class="row">
-// 							<div class="col-sm-12">
-// 								<div class="h1 text-center">1 Open</div>
-// 							</div>
-// 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-qa">
-// 						<div class="row">
-// 							<div class="col-xs-6 tile-caption-pipe">
-// 								<p class="text-center">Resolved</p>
-// 								<h3 class="text-center">2</h3>
-// 							</div>
-// 							<div class="col-xs-6">
-// 								<p class="text-center">Last</p>
-// 								<h3 class="text-center">10/25/14</h3>
-// 							</div>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-marketing">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-bullseye"></i> MARKETING</i>
-// 					</div>
-// 					<div class="tile-body">
-// 						<div class="row">
-// 							<div class="col-sm-12">
-// 								<div class="h1 text-center">1 Active</div>
-// 							</div>
-// 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-marketing">
-// 						<div class="row">
-// 							<div class="col-xs-12">
-// 								<p class="text-center">Total Campaigns</p>
-// 								<h3 class="text-center">7</h3>
-// 							</div>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-service">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-wrench"></i> SERVICE</i>
-// 					</div>
-// 					<div class="tile-body">
-// 						<div class="row">
-// 							<div class="col-sm-12">
-// 								<div class="h1 text-center">$123,456</div>
-// 							</div>
-// 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-service">
-// 						<div class="row">
-// 							<div class="col-xs-6 tile-caption-pipe">
-// 								<p class="text-center">ROs</p>
-// 								<h3 class="text-center">100</h3>
-// 							</div>
-// 							<div class="col-xs-6">
-// 								<p class="text-center">Average</p>
-// 								<h3 class="text-center">$331</h3>
-// 							</div>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-vehicle">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-car"></i> VEHICLES</i>
-// 					</div>
-// 					<div class="tile-body">
-// 						<div class="row">
-// 							<div class="col-sm-12">
-// 								<div class="h1 text-center">2 Owned</div>
-// 							</div>
-// 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-vehicle">
-// 						<div class="row">
-// 							<div class="col-xs-12">
-// 								<p class="text-center">Last Service</p>
-// 								<h3 class="text-center">10/25/14</h3>
-// 							</div>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="col-sm-6">
-// 		<div class="tile-wrapper">
-// 			<div class="tile tile-survey">
-// 				<div class="tile-action">
-// 					<div class="tile-heading">
-// 						<i class="fa fa-check-square-o"></i> SURVEYS</i>
-// 					</div>
-// 					<div class="tile-body">
-// 						<div class="row">
-// 							<div class="col-sm-12">
-// 								<div class="h1 text-center">5 Received</div>
-// 							</div>
-// 						</div>
-// 					</div>
-// 					<div class="tile-caption tile-caption-survey">
-// 						<div class="row">
-// 							<div class="col-xs-6 tile-caption-pipe">
-// 								<p class="text-center">Last Score</p>
-// 								<h3 class="text-center">75%</h3>
-// 							</div>
-// 							<div class="col-xs-6">
-// 								<p class="text-center">Last</p>
-// 								<h3 class="text-center">10/25/14</h3>
-// 							</div>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
+// 		</section>
 // 	</div>
 // </div>
 //

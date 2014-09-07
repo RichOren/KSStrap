@@ -64,50 +64,81 @@
                               
                               <section id="section-0" class="kss-section kss-overview">
                                 <h1>KSStrap</h1>
-<p>This is a <strong>living styleguide</strong> made from <a href="https://github.com/hughsk/kss-node">kss-node</a> styleguide.
+<p>This is a CSS Design Workflow that was designed to make it easier for UX Designers, UX/UI Developers and Front-End Developers to collaborate on component development in an Agile and Lean UX environment. It will also help individual designers/develolpers to stay organized, work efficiently, and reduce the repitition of many day to day tasks.
+
+</p>
+<p>KSStrap utilizes a <strong>living styleguide</strong> made from <a href="https://github.com/hughsk/kss-node">kss-node</a> styleguide.
 &quot;kss-node&quot; is a NodeJS implementation of <a href="https://github.com/kneath/kss">Knyle Style Sheets</a> (KSS).
-kss-node enables us to generate a beatiful styleguide for CSS, of course that suports LESS, SASS and Stylus. That is thanks to <a href="http://http://getbootstrap.com/">Bootstrap</a>.
+kss-node enables us to generate a beatiful styleguide for CSS, it also suports LESS, SASS and Stylus. 
+
+</p>
+<p>This implementation uses LESS, it&apos;s a fully customizable styleguide using the world famous framework <a href="http://getbootstrap.com/">Bootstrap</a>. KSStrap was inspired by this project and I learned alot trying to figure out what these Super Talented people were doing. You guys rule!
+
+</p>
+<h2>Create custom and/or multi-themed Websites &amp; Web Apps.</h2>
+<p>All you need to do is get familiar with the <a href="https://github.com/RichOren/KSStrap/blob/master/content/less/variables.less">variables.less</a> file. 
+
+</p>
+<p>It is currently based on <a href="https://github.com/twbs/bootstrap/blob/master/less/variables.less">Bootstrap&apos;s 3.2.0 variables.less</a> file. It has been modified to create a custom themed bootstrap, and supports the extention of Bootstrap&apos;s <a href="http://getbootstrap.com/css/">Base CSS</a>, <a href="http://getbootstrap.com/components/">Components CSS</a> and <a href="http://getbootstrap.com/javascript/">Javascript CSS</a>.
+
+</p>
+<p>To get more familiar with these variables you can check out the <a href="http://getbootstrap.com/customize/">Customize Bootstrap</a>.
+
+</p>
+<p><strong>Coming Soon</strong> - Adding an example website in addition to the <a href="https://github.com/RichOren/KSStrap/tree/master/styleguide">styleguide example</a>.
+
+</p>
+<h2>Custom Icon Fonts</h2>
+<p>It is poosible to add and build your own custom icon fonts using the <a href="https://icomoon.io/app/">IcoMoon App</a>. This example is using <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome 4.2.0</a> with <strong>IcoMoon&apos;s Happy Faces</strong> added as an example of how to customize and mix fonts. 
+
+</p>
+<p>You can import the <a href="https://github.com/RichOren/KSStrap/blob/master/content/kss/template/public/fonts/KSStrap.selection.json">KSStrap.selection JSON file</a> into the <a href="https://icomoon.io/app/">IcoMoon App</a>, customize, add your own glyphs and then download your changes. 
+
+</p>
+<p>I will do a complete tutorial when I get the time on how this is done. It is super easy though to figure out this <a href="https://icomoon.io/app/">TOTALLY AWESOME app</a>. The people over at <a href="https://icomoon.io/">IcoMoon</a> are super creative and very generous for creating such an awesome tool.
+
 
 
 </p>
 <h2>Download</h2>
-<p><strong><a href="https://github.com/htanjo/kss-node-template/archive/master.zip">kss-node-template</a></strong> [zip] or
+<p><strong><a href="https://github.com/RichOren/KSStrap/zipball/master.zip">KSStrap</a></strong> [zip] or
 
 </p>
-<pre><code>git clone git://github.com/htanjo/kss-node-template.git</code></pre>
-<p><strong>Note:</strong> This package contains only template files.
-You have to install kss-node at first.
-
-
-</p>
-<h2>How to apply this template</h2>
-<ol>
-<li>Install kss-node. Type <code>npm install kss</code> or <code>npm install -g kss</code> for global CLI.</li>
-<li>Download <a href="https://github.com/htanjo/kss-node-template/archive/master.zip">kss-node-template</a> and copy the &quot;template&quot; folder into your working directory.</li>
-<li>Run <code>kss-node</code> command with <code>--template</code> option, like below.</li>
-</ol>
-<pre><code>kss-node &lt;sourcedir&gt; --template path/to/template</code></pre>
+<pre><code>git clone git://github.com/RichOren/KSStrap.git</code></pre>
 <h2>License</h2>
 <p>This template is under the <a href="https://github.com/htanjo/kss-node-template/blob/master/LICENSE">MIT License</a>.
 
 
-</p>
-<h1>kss-node quickstart</h1>
-<p>I introduce about kss-node briefly.
-
-</p>
-<p>If you want to learn kss-node, please refer <a href="https://github.com/hughsk/kss-node">kss-node project page</a>.
-And also the original <a href="https://github.com/kneath/kss/blob/master/SPEC.md">KSS specification</a> may be helpful for writing your documentation.
-
 
 </p>
 <h2>Installation</h2>
-<p>As kss-node is provided as a npm package, you can install by just typing <code>npm install kss</code>.
-If you want to use the command line interface, install it globally.
+<p>All you have to do is make sure you have <a href="http://nodejs.org/">Node JS</a>, <a href="http://gruntjs.com/getting-started">Grunt CLI</a> and <a href="http://bower.io/">Bower</a> installed then run the commands below:
 
 </p>
-<pre><code>npm install -g kss</code></pre>
-<h2>Format</h2>
+<pre><code>npm install</code></pre>
+<p>This will install the Grunt Dependencies needed to complete the KSStrap workflow tasks. 
+
+</p>
+<pre><code>bower install</code></pre>
+<p>This will install the Bower Dependencies (Bootstrap - FontAwesome) and source files needed for the KSStrap workflow tasks. 
+</p>
+<pre><code>grunt</code></pre>
+<p>This will run the default Grunt task which will run through the KSStrap workflow and create:
+
+</p>
+<h6>Style Sheets for your website or web app.</h6>
+<ul>
+<li>content/styles/KSStrap.css - Debug</li>
+<li>content/styles/KSStrap.css.map - <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">Map</a></li>
+<li>content/styles/KSStrap.min.css - Production</li>
+</ul>
+<h6>Styleguide Website for your website or web app.</h6>
+<ul>
+<li>styleguide/index.html - Home and overview of the style guide.</li>
+<li>styleguide/section-xxx.html - Each section of the Styleguide.</li>
+<li>styleguide/public/ - Assets for the Styleguide website. </li>
+</ul>
+<h2>Formating the TechDoc&apos;s</h2>
 <p>kss-node is almost compatible with KSS documentation.
 But kss-node can depend on only comment in source code because it has <code>Markup:</code> directive for showing the sample markup.
 
@@ -187,8 +218,8 @@ From the top,
 
 </p>
 <h2>More example code</h2>
-<p>This document is also created by using kss-node.
-You can see the source code in the <a href="https://github.com/htanjo/kss-node-template/tree/master/demo/src">demo directory</a>.</p>
+<p>This document is also created by using KSStrap.
+</p>
 
                               </section>
                               
