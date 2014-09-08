@@ -143,7 +143,7 @@ kss-node enables us to generate a beatiful styleguide for CSS, it also suports L
 └</code></pre>
 <h6>Styleguide Website for your website or web app.</h6>
 <ul>
-<li>styleguide/index.html - Home and overview of the style guide.</li>
+<li>styleguide/index.html - Home and overview of the Styleguide.</li>
 <li>styleguide/section-xxx.html - Each section of the Styleguide.</li>
 <li>styleguide/public/ - Assets for the Styleguide website. </li>
 </ul>
@@ -153,6 +153,18 @@ kss-node enables us to generate a beatiful styleguide for CSS, it also suports L
 ├── public/
 │   ├── ... Assets
 └</code></pre>
+<h2>Workflow</h2>
+<p>When your ready to do some serious work on the Styleguide <a href="https://github.com/RichOren/KSStrap/tree/master/content/kss/docs">TechDoc&apos;s</a> or if you are working with the <a href="https://github.com/RichOren/KSStrap/tree/master/content/less">less</a> files.
+Use the watch command:
+</p>
+<pre><code>grunt watch</code></pre>
+<p>This will run the watch Grunt task and will watch for changes to <a href="https://github.com/RichOren/KSStrap/tree/master/content/kss/docs">content/kss/docs</a> and <a href="https://github.com/RichOren/KSStrap/tree/master/content/less">content/kss/less</a> folders.
+When it detects a change it will fire off the KSStrap tasks and update your CSS and Styleguide. Then KSStrap continues to watch until you turn it off in the terminal.
+
+</p>
+<p><strong>Coming Soon</strong> - A full tutorial of the complete KSStrap workflow.
+
+</p>
 <h2>Formating the TechDoc&apos;s</h2>
 <p>kss-node is almost compatible with KSS documentation.
 But kss-node can depend on only comment in source code because it has <code>Markup:</code> directive for showing the sample markup.

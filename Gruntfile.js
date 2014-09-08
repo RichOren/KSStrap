@@ -142,13 +142,13 @@ module.exports = function (grunt) {
               nospawn: true
             }
           },
-			styleGuide: {
-				files: [
-					'content/less/**/*.less',
-					'content/kss/**/*'
-				],
-				tasks: ['less', 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'kss']
-			},
+    			styleGuide: {
+    				files: [
+    					'content/less/**/*.less',
+    					'content/kss/**/*'
+    				],
+    				tasks: ['less', 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'kss']
+    			},
         },
         exec: {
           npmUpdate: {

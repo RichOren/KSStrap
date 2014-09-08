@@ -81,7 +81,7 @@ content/
 
 ######Styleguide Website for your website or web app.
 
-* styleguide/index.html - Home and overview of the style guide.
+* styleguide/index.html - Home and overview of the Styleguide.
 * styleguide/section-xxx.html - Each section of the Styleguide.
 * styleguide/public/ - Assets for the Styleguide website. 
 
@@ -93,6 +93,18 @@ styleguide/
 │   ├── ... Assets
 └
 ```
+
+Workflow
+------------
+When your ready to do some serious work on the Styleguide [TechDoc's](https://github.com/RichOren/KSStrap/tree/master/content/kss/docs) or if you are working with the [less](https://github.com/RichOren/KSStrap/tree/master/content/less) files.
+Use the watch command:
+```
+grunt watch
+```
+This will run the watch Grunt task and will watch for changes to [content/kss/docs](https://github.com/RichOren/KSStrap/tree/master/content/kss/docs) and [content/kss/less](https://github.com/RichOren/KSStrap/tree/master/content/less) folders.
+When it detects a change it will fire off the KSStrap tasks and update your CSS and Styleguide. Then KSStrap continues to watch until you turn it off in the terminal.
+
+**Coming Soon** - A full tutorial of the complete KSStrap workflow.
 
 Formating the TechDoc's
 ------
