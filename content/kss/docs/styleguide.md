@@ -21,6 +21,8 @@ To get more familiar with these variables you can check out the [Customize Boots
 
 **Coming Soon** - Adding an example website in addition to the [styleguide example](https://github.com/RichOren/KSStrap/tree/master/styleguide).
 
+**Coming Soon** - More TechDoc's of the atomic pieces of the Bootstrap Framework (i.e more then just the buttons-techdoc.less).
+
 Custom Icon Fonts
 --------
 It is poosible to add and build your own custom icon fonts using the [IcoMoon App](https://icomoon.io/app/). This example is using [FontAwesome 4.2.0](http://fortawesome.github.io/Font-Awesome/) with **IcoMoon's Happy Faces** added as an example of how to customize and mix fonts. 
@@ -66,17 +68,23 @@ This will run the default Grunt task which will run through the KSStrap workflow
 
 ######Style Sheets for your website or web app.
 
-* content/styles/KSStrap.css - Debug
-* content/styles/KSStrap.css.map - [Map](https://developer.chrome.com/devtools/docs/css-preprocessors)
-* content/styles/KSStrap.min.css - Production
+* content/styles/ksstrap.css - Debug
+* content/styles/ksstrap.css.map - [Map](https://developer.chrome.com/devtools/docs/css-preprocessors)
+* content/styles/ksstrap.min.css - Production
 
 ```
 content/
 ├── styles/
-│   ├── KSStrap.css
-│   ├── KSStrap.css.map
-│   └── KSStrap.min.css
+│   ├── ksstrap.css
+│   ├── ksstrap.css.map
+│   └── ksstrap.min.css
 └
+```
+You can customize the name of your stylesheet by changing the value of variable "name" on line 2 in the [package.json](https://github.com/RichOren/KSStrap/blob/master/package.json) file.
+
+```
+"name": "ksstrap",
+
 ```
 
 ######Styleguide Website for your website or web app.

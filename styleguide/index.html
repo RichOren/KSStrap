@@ -91,6 +91,9 @@ kss-node enables us to generate a beatiful styleguide for CSS, it also suports L
 <p><strong>Coming Soon</strong> - Adding an example website in addition to the <a href="https://github.com/RichOren/KSStrap/tree/master/styleguide">styleguide example</a>.
 
 </p>
+<p><strong>Coming Soon</strong> - More TechDoc&apos;s of the atomic pieces of the Bootstrap Framework (i.e more then just the buttons-techdoc.less).
+
+</p>
 <h2>Custom Icon Fonts</h2>
 <p>It is poosible to add and build your own custom icon fonts using the <a href="https://icomoon.io/app/">IcoMoon App</a>. This example is using <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome 4.2.0</a> with <strong>IcoMoon&apos;s Happy Faces</strong> added as an example of how to customize and mix fonts. 
 
@@ -131,16 +134,20 @@ kss-node enables us to generate a beatiful styleguide for CSS, it also suports L
 </p>
 <h6>Style Sheets for your website or web app.</h6>
 <ul>
-<li>content/styles/KSStrap.css - Debug</li>
-<li>content/styles/KSStrap.css.map - <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">Map</a></li>
-<li>content/styles/KSStrap.min.css - Production</li>
+<li>content/styles/ksstrap.css - Debug</li>
+<li>content/styles/ksstrap.css.map - <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">Map</a></li>
+<li>content/styles/ksstrap.min.css - Production</li>
 </ul>
 <pre><code>content/
 ├── styles/
-│   ├── KSStrap.css
-│   ├── KSStrap.css.map
-│   └── KSStrap.min.css
+│   ├── ksstrap.css
+│   ├── ksstrap.css.map
+│   └── ksstrap.min.css
 └</code></pre>
+<p>You can customize the name of your stylesheet by changing the value of variable &quot;name&quot; on line 2 in the <a href="https://github.com/RichOren/KSStrap/blob/master/package.json">package.json</a> file.
+
+</p>
+<pre><code>&quot;name&quot;: &quot;ksstrap&quot;,</code></pre>
 <h6>Styleguide Website for your website or web app.</h6>
 <ul>
 <li>styleguide/index.html - Home and overview of the Styleguide.</li>
