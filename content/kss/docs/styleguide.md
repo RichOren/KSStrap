@@ -1,7 +1,7 @@
 KSStrap
 =================
 
-This is a CSS Design Workflow that was designed to make it easier for UX Designers, UX/UI Developers and Front-End Developers to collaborate on component development in an Agile and Lean UX environment. It will also help individual designers/develolpers to stay organized, work efficiently, and reduce the repitition of many day to day tasks.
+This is a CSS Design Workflow that was engineered to make it easier for UX Designers, UX/UI Developers and Front-End Developers to collaborate on component development in an Agile and Lean UX environment. It will also help individual designers/develolpers to stay organized, work efficiently, and reduce the repitition of many day to day tasks.
 
 KSStrap utilizes a **living styleguide** made from [kss-node](https://github.com/hughsk/kss-node) styleguide.
 "kss-node" is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS).
