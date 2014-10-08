@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         banner: '/*!\n' +
-            ' * DealerSocket Styles v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * KSSStrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
             ' */\n',
