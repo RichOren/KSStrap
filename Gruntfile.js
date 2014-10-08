@@ -13,10 +13,12 @@ module.exports = function (grunt) {
             ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
             ' */\n',
+        
         clean: {
           styleguide: ['styleguide'],
           styles: [ 'content/styles/']
         },
+        
         less: {
             core: {
                 options: {
@@ -142,20 +144,23 @@ module.exports = function (grunt) {
               nospawn: true
             }
           },
-    			styleGuide: {
-    				files: [
-    					'content/less/**/*.less',
-    					'content/kss/**/*'
-    				],
-    				tasks: ['less', 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'kss']
-    			},
+          
+    	styleGuide: {
+    		files: [
+    			'content/less/**/*.less',
+    			'content/kss/**/*'
+    			],
+    			tasks: ['less', 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'kss']
+    		},
         },
+        
         exec: {
           npmUpdate: {
             command: 'npm update'
           }
 		}
     });
+    
     // These plugins provide necessary tasks.
       require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
       require('time-grunt')(grunt);
