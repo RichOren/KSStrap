@@ -1,7 +1,7 @@
 {
   "name": "ksstrap",
   "version": "0.1.0",
-  "author": "",
+  "author": "Rich Oren",
   "description": "A Bootstrap driven KSS Style Guide",
   "keywords": [
     "css",
@@ -14,7 +14,7 @@
     "KSS",
     "living styleguide"
   ],
-  "homepage": "TBD",
+  "homepage": "http://richoren.github.io/KSStrap/index.html",
   "license": "ISC",
   "main": "main.js",
   "directories": {
