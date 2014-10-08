@@ -164,6 +164,5 @@ module.exports = function (grunt) {
     // Default task(s).
     grunt.registerTask('lint-docs-css', ['csslint:core']);
     grunt.registerTask('default', ['clean:styles', 'less', 'autoprefixer', 'csscomb:core', 'usebanner', 'cssmin', 'clean:styleguide', 'kss']);
-    // 'autoprefixer:core', 'csscomb:core', 'usebanner', 'cssmin:minifyCore', 'lint-docs-css'
 
 };
