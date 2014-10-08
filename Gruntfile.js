@@ -158,7 +158,7 @@ module.exports = function (grunt) {
           npmUpdate: {
             command: 'npm update'
           }
-		}
+	}
     });
     
     // These plugins provide necessary tasks.
